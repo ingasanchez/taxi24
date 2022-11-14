@@ -86,7 +86,7 @@ public class ViajeController {
         double dist = UtilitiesHelper.distanciaCoord(viaje.getOrigen(), coordenada);
         try {
             FacturaModel factura = new FacturaModel();
-            factura.setViaje(viaje);
+            factura.setViaje(viaje); 
             factura.setDistancia(dist);
             factura.setMonto(dist > 0 ? dist * Constantes.PrecioPorKm : 0);
             facturaService.GuardarFactura(factura);
