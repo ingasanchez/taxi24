@@ -16,26 +16,27 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ConductorService {
+
     @Autowired
     ConductorRepository conductorRepository;
-    
-    public ArrayList<ConductorModel> obtenerConductores (){
-          return (ArrayList<ConductorModel>) conductorRepository.findAll();
+
+    public ArrayList<ConductorModel> obtenerConductores() {
+        return (ArrayList<ConductorModel>) conductorRepository.findAll();
     }
-    
-     public ConductorModel obtenerConductorById ( long id){
-          return (ConductorModel)conductorRepository.findById(id).get();
+
+    public ConductorModel obtenerConductorById(long id) {
+        return (ConductorModel) conductorRepository.findById(id).get();
     }
-     
-     public ArrayList<ConductorModel> obtenerConductoresDisponibles (){
-          return (ArrayList<ConductorModel>)conductorRepository.findConductoresDisponibles();
+
+    public ArrayList<ConductorModel> obtenerConductoresDisponibles() {
+        return (ArrayList<ConductorModel>) conductorRepository.findConductoresDisponibles();
     }
-     
-      public ArrayList<ConductorModel> obtenerConductoresCercanos (){
-          return (ArrayList<ConductorModel>)conductorRepository.findConductoresDisponibles();
+
+    public ArrayList<ConductorModel> obtenerConductoresCercanos() {
+        return (ArrayList<ConductorModel>) conductorRepository.findConductores();
     }
-     
-      public ConductorModel GuardarConductor ( ConductorModel conductor){
-          return conductorRepository.save(conductor);  
+
+    public ConductorModel GuardarConductor(ConductorModel conductor) {
+        return conductorRepository.save(conductor);
     }
 }
