@@ -34,13 +34,13 @@ $ mvn spring-boot:run
 | EndPoint                     | Función             |
 | ---------------------------- | ------------------------- |
 | `GET /conductor/obtenerTodos` | Obtener todos los conductores.|
-| `GET /conductor/obtenerDisponibles` | Obtener conductores disponibles  |
-| `GET /conductor/obtenerConductorByDistance/{coordenada}/{distancia}` | Lista conductores disponibles para ubicacion especificada en radio de distancia  |
-| `GET/conductor/{Id}`    | Obtener conductor especifico por ID   |
-| `POST /viaje/crearViaje`              | Crear nueva solicitud de viaje   |
-| `PUT /viaje/completarViaje/{ID}/{coordenada}`   | Completar un viaje actualizando la coordenada destino  |
-| `GET /viaje/obtenerViajesActivos`               | Obtener todos los viajes activos        |
-| `GET /pasajero/obtenerTodos`     | Obtener todos los pasajeros existentes |
-| `GET/pasajero/{Id}`    | Obtener pasajero especifico por ID   |
-| `GET /pasajero/obtenerConductoresCercanos/{coordenada}/{cantidad}`    | Obtener n conductores cercanos a la coordenada especificada        |
-| `GET /factura/obtenerTodas` | Obtener el listado de facturas          |
+| `GET /conductor/obtenerDisponibles` | Obtener conductores disponibles.  |
+| `GET /conductor/obtenerConductorByDistance/{coordenada}/{distancia}` | Lista conductores disponibles para ubicación especificada en radio de distancia.  |
+| `GET/conductor/{Id}`    | Obtener conductor específico por ID.   |
+| `POST /viaje/crearViaje`              | Crear nueva solicitud de viaje.   |
+| `PUT /viaje/completarViaje/{ID}/{coordenada}`   | Completar un viaje especificando el ID y la coordenada destino para actualizarla.  |
+| `GET /viaje/obtenerViajesActivos`               | Obtener todos los viajes activos.        |
+| `GET /pasajero/obtenerTodos`     | Obtener lista de todos los pasajeros existentes. |
+| `GET/pasajero/{Id}`    | Obtener pasajero específico por ID.  |
+| `GET /pasajero/obtenerConductoresCercanos/{coordenada}/{cantidad}`    | Obtener cant conductores cercanos a la coordenada especificada.        |
+| `GET /factura/obtenerTodas` | Obtener el listado de facturas.          |
