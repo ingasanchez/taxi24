@@ -31,4 +31,11 @@ public class ConductorService {
           return (ArrayList<ConductorModel>)conductorRepository.findConductoresDisponibles();
     }
      
+      public ArrayList<ConductorModel> obtenerConductoresCercanos (){
+          return (ArrayList<ConductorModel>)conductorRepository.findConductoresDisponibles();
+    }
+     
+      public ConductorModel GuardarConductor ( ConductorModel conductor){
+          return conductorRepository.save(conductor);
+    }
 }

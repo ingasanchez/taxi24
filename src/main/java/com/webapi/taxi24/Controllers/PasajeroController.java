@@ -48,7 +48,7 @@ public class PasajeroController {
     public List<ConductorModel> obtenerConductoresCercanos(@PathVariable("coordenada") String coordenada, @PathVariable("cantidad") Double cant) {
 
         Map<Double, ConductorModel> conductoresByDistance = new TreeMap<>();
-        List<ConductorModel> conductoresDisponibles = conductorService.obtenerConductoresDisponibles();
+        List<ConductorModel> conductoresDisponibles = conductorService.obtenerConductoresCercanos();
         for (ConductorModel conductor : conductoresDisponibles) {
             double dist = UtilitiesHelper.distanciaCoord(coordenada, conductor.getUbicacionActual());
             conductoresByDistance.put((Double) dist, conductor);

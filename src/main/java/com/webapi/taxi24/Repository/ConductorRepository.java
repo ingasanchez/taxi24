@@ -15,4 +15,7 @@ public interface ConductorRepository extends CrudRepository<ConductorModel, Long
 
     @Query("Select c from ConductorModel c Where c.estado = 'D'")
     ArrayList<ConductorModel> findConductoresDisponibles();
+    
+    @Query("Select c from ConductorModel c Where c.estado <> 'N'")
+    ArrayList<ConductorModel> findConductores();
 }
