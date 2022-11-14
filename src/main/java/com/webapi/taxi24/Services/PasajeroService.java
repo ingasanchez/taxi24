@@ -1,4 +1,3 @@
-
 package com.webapi.taxi24.Services;
 
 import com.webapi.taxi24.Models.PasajeroModel;
@@ -13,15 +12,16 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PasajeroService {
+
     @Autowired
     PasajeroRepository pasajeroRepository;
-    
-     public ArrayList<PasajeroModel> obtenerPasajeros (){
-          return (ArrayList<PasajeroModel>) pasajeroRepository.findAll();
+
+    public ArrayList<PasajeroModel> obtenerPasajeros() {
+        return (ArrayList<PasajeroModel>) pasajeroRepository.findAll();
     }
-    
-     public PasajeroModel obtenerPasajeroById ( long id){
-          return (PasajeroModel)pasajeroRepository.findById(id).get();
+
+    public PasajeroModel obtenerPasajeroById(long id) {
+        return (PasajeroModel) pasajeroRepository.findById(id).get();
     }
-     
+
 }

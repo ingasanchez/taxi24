@@ -1,4 +1,3 @@
-
 package com.webapi.taxi24.Helpers;
 
 /**
@@ -6,7 +5,7 @@ package com.webapi.taxi24.Helpers;
  * @author ADISON
  */
 public class Constantes {
-    
+
     /**
      * Precio por KM para calcular el monto a facturar.
      */

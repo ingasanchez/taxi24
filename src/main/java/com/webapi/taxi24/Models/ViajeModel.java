@@ -1,4 +1,3 @@
-
 package com.webapi.taxi24.Models;
 
 import java.io.Serializable;
@@ -20,15 +19,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "viaje")
 public class ViajeModel implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
     private Long id;
     @OneToOne()
-    @JoinColumn(name="id_conductor", referencedColumnName = "id")
+    @JoinColumn(name = "id_conductor", referencedColumnName = "id")
     private ConductorModel conductor;
     @OneToOne()
-    @JoinColumn(name="id_pasajero", referencedColumnName = "id")
+    @JoinColumn(name = "id_pasajero", referencedColumnName = "id")
     private PasajeroModel pasajero;
     private String origen;
     private String destino;
@@ -115,6 +115,5 @@ public class ViajeModel implements Serializable {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
-    
-    
+
 }

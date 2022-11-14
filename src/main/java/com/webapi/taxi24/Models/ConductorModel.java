@@ -1,4 +1,3 @@
-
 package com.webapi.taxi24.Models;
 
 import java.io.Serializable;

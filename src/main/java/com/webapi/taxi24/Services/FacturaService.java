@@ -16,19 +16,20 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class FacturaService {
+
     @Autowired
     FacturaRepository facturaRepository;
-    
-     public ArrayList<FacturaModel> obtenerFacturas (){
-          return (ArrayList<FacturaModel>) facturaRepository.findAll();
+
+    public ArrayList<FacturaModel> obtenerFacturas() {
+        return (ArrayList<FacturaModel>) facturaRepository.findAll();
     }
-    
-     public FacturaModel obtenerFacturaById ( long id){
-          return (FacturaModel)facturaRepository.findById(id).get();
+
+    public FacturaModel obtenerFacturaById(long id) {
+        return (FacturaModel) facturaRepository.findById(id).get();
     }
-     
-     public FacturaModel GuardarFactura ( FacturaModel factura){
-          return facturaRepository.save(factura);
+
+    public FacturaModel GuardarFactura(FacturaModel factura) {
+        return facturaRepository.save(factura);
     }
-     
+
 }

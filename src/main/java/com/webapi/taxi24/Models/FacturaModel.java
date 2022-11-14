@@ -86,5 +86,4 @@ public class FacturaModel implements Serializable {
         this.distancia = distancia;
     }
 
-    
 }

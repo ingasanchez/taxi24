@@ -43,7 +43,6 @@ public class PasajeroController {
         return pasajeroService.obtenerPasajeroById(id);
     }
 
-
     @GetMapping(path = "obtenerConductoresCercanos/{coordenada}/{cantidad}")
     public List<ConductorModel> obtenerConductoresCercanos(@PathVariable("coordenada") String coordenada, @PathVariable("cantidad") Double cant) {
 
