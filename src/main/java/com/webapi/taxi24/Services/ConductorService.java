@@ -37,6 +37,6 @@ public class ConductorService {
     }
 
     public ConductorModel GuardarConductor(ConductorModel conductor) {
-        return conductorRepository.save(conductor);
+        return conductorRepository.save(conductor); 
     }
 }
